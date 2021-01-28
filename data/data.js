@@ -1,3 +1,4 @@
+
 const water = {
     id: 'water',
     title: 'Fresh pool of water',
@@ -155,11 +156,10 @@ const air = {
     }]
 };
 
-const ingredients = [
+export const ingredientsData = [
     water,
     earth,
     fire,
-    air
+    air,
 ];
 
-export default ingredients;

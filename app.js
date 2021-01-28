@@ -7,10 +7,11 @@ form.addEventListener('submit', (e) => {
     const user = {
         name: formData.get('name'),
         witch: formData.get('witch'),
-        peace: 45,
+        peace: 35,
         power: 0,
         completed: {},
     };
+
     const stringyUser = JSON.stringify(user);
     localStorage.setItem('USER', stringyUser);
     window.location = './elements/index.html';
