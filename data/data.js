@@ -1,12 +1,12 @@
 
 const water = {
     id: 'water',
-    title: 'Fresh pool of water',
+    title: 'Fresh pool of Water',
     map: {
         top: '89%', // for where it shows on page
         left: '44%'
     },
-    image: 'image.png',
+    image: '../assets/water.png',
     description: `
         You've come to gather powerful water for your spell from a beautiful fresh pool. 
         But you encounter a water serpent protecting it's magic filled pool. What do you do?
@@ -42,12 +42,12 @@ const water = {
 
 const earth = {
     id: 'earth',
-    title: 'A beautiful forest',
+    title: 'A beautiful Forest',
     map: {
         top: '89%', // for where it shows on page
         left: '44%'
     },
-    image: 'image.png',
+    image: '../assets/earth.png',
     description: `
         All you need is a bit of earth for your spell but how do you get it?
     `,
@@ -80,12 +80,12 @@ const earth = {
 
 const fire = {
     id: 'fire',
-    title: 'An open grassy medow',
+    title: 'An open grassy Meadow',
     map: {
         top: '89%', // for where it shows on page
         left: '44%'
     },
-    image: 'image.png',
+    image: '../assets/fire.png',
     description: `
         You need to gather a bit of burnt nature to make your spell ever more powerful. What do you 
         do?
@@ -119,12 +119,13 @@ const fire = {
 
 const air = {
     id: 'air',
-    title: 'The highest hilltop',
+    title: 'The highest Hilltop',
     map: {
         top: '89%', // for where it shows on page
         left: '44%'
     },
-    image: 'image.png',
+    prerequisites: ['water', 'earth', 'fire'],
+    image: '../assets/air.png',
     description: `
         You need the element of air to blow out the old and bring in the new. How do you get it?
     `,

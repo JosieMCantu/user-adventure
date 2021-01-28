@@ -1,5 +1,9 @@
-// import functions and grab DOM elements
-
-// initialize state
-
-// set event listeners to update state and DOM
+export function scorePower(power) {
+    if (power <= 0) {
+        return 'dead';
+    }
+    if (power < 50) {
+        return 'modest';
+    }
+    return 'powerful';
+}

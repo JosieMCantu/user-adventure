@@ -1,5 +1,10 @@
-// import functions and grab DOM elements
 
-// initialize state
-
-// set event listeners to update state and DOM
+export function scorePeace(peace) {
+    if (peace <= 0) {
+        return 'broken';
+    }
+    if (peace < 50) {
+        return 'confident';
+    }
+    return 'powerful';
+}
