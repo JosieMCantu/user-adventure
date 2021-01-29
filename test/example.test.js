@@ -7,7 +7,7 @@ test('scorePeace should take in a number and return a string', (expect) => {
     //Arrange
     const peace = 75;
     // Set up your arguments and expectations
-    const expected = 'powerful';
+    const expected = 'healthy';
 
     //Act 
     // Call the function you're testing and set the result to a const
@@ -22,7 +22,7 @@ test('scorePower should take in a number and return a string', (expect) => {
     //Arrange
     const power = 25;
     // Set up your arguments and expectations
-    const expected = 'confident';
+    const expected = 'frail';
 
     //Act 
     // Call the function you're testing and set the result to a const
