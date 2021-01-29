@@ -1,9 +1,9 @@
 export function scorePower(power) {
     if (power <= 0) {
-        return 'dead';
+        return 'broken';
     }
     if (power < 50) {
-        return 'modest';
+        return 'confident';
     }
     return 'powerful';
 }

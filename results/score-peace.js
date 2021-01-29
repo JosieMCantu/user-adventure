@@ -1,10 +1,10 @@
 
 export function scorePeace(peace) {
     if (peace <= 0) {
-        return 'broken';
+        return 'dead';
     }
     if (peace < 50) {
-        return 'confident';
+        return 'frail';
     }
-    return 'powerful';
+    return 'healthy';
 }

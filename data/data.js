@@ -61,7 +61,7 @@ const earth = {
         power: 50
     }, {
         id: 'scrape',
-        description: 'Scape a bit of soil off the top',
+        description: 'Scrape a bit of soil off the top',
         result: `
             You lazily scrape a bit of soil off the top because who's got time for manual labor?
         `,
