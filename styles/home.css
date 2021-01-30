@@ -1,1 +1,55 @@
-/* add home page styles here */
+
+html, body {
+    margin: 0;
+	padding: 0;
+    border: 0;
+    background: url("../assets/nightsky.png") no-repeat center center/cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: grey;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    background-color: rgba(45, 60, 83, 0.7);
+    margin-top: 50px;
+    padding: 10px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: darkred;
+    text-decoration: none;
+}
+fieldset {
+    border: 0;
+}
+p {
+    text-align: center;
+}
+button {
+    
+}
+.witchy-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
