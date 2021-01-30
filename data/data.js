@@ -13,7 +13,7 @@ const water = {
     `,
     choices: [{
         id: 'pay',
-        description: 'Pay off the serpent.',
+        description: ' Pay off the serpent ',
         result: `
             Serpents are very smart and it could destroy you swiftly but you would have to give up
             your peace of mind giving away your magical freedom.
@@ -22,20 +22,20 @@ const water = {
         power: 35
     }, {
         id: 'steal',
-        description: 'Steal the water without the serpent noticing.',
+        description: ' Steal the water without the serpent noticing ',
         result: `
             You sneak into the powerful pool taking your precious ingredient but getting too tired
             to fly.
         `,
-        peace: -30,
+        peace: 0,
         power: 50
     }, {
         id: 'leave',
-        description: 'Leave the water and serpent alone.',
+        description: ' Leave the water and serpent alone ',
         result: `
             You leave the water and serpent behind losing 10 peace of mind points.
         `,
-        peace: -10,
+        peace: 50,
         power: 0
     }]
 };
@@ -53,27 +53,27 @@ const earth = {
     `,
     choices: [{
         id: 'dig',
-        description: 'Dig deep into the earth to get the best soil.',
+        description: ' Dig deep into the earth to get the best soil ',
         result: `
             This is tough work but you gain points for getting the best earth.
         `,
-        peace: 0,
+        peace: 10,
         power: 50
     }, {
         id: 'scrape',
-        description: 'Scrape a bit of soil off the top',
+        description: ' Scrape a bit of soil off the top ',
         result: `
             You lazily scrape a bit of soil off the top because who's got time for manual labor?
         `,
-        peace: -30,
+        peace: 0,
         power: 40
     }, {
         id: 'leave',
-        description: 'You leave without soil.',
+        description: ' You leave without soil ',
         result: `
             You leave the beautiful forest without soil because you don't want to disturb the trees.
         `,
-        peace: -5,
+        peace: 20,
         power: 0
     }]
 };
@@ -92,7 +92,7 @@ const fire = {
     `,
     choices: [{
         id: 'burn',
-        description: 'Light a fire.',
+        description: ' Light a fire ',
         result: `
         Oops! You light a fire in the middle of the meadow burning it to the ground.
         `,
@@ -100,20 +100,20 @@ const fire = {
         power: 0
     }, {
         id: 'steal',
-        description: 'Steal the fire from a near by home.',
+        description: ' Steal the fire from a near by home ',
         result: `
             You break into a near by home and steal whatever was burning in their fireplace.
         `,
-        peace: -30,
+        peace: -10,
         power: 50
     }, {
         id: 'candle',
-        description: 'You light a candle',
+        description: ' You light a candle ',
         result: `
             You light a candle in the meadow, burn a slip of paper and blow the candle out.
         `,
         peace: 50,
-        power: 0
+        power: 50
     }]
 };
 
@@ -131,7 +131,7 @@ const air = {
     `,
     choices: [{
         id: 'mediate',
-        description: 'Plop down and close your eyes to breathe and think.',
+        description: ' Plop down and close your eyes to breathe and think ',
         result: `
             You do get a lot of energy from mediation but you don't get any more power from mediation.
         `,
@@ -139,7 +139,7 @@ const air = {
         power: 0
     }, {
         id: 'chant',
-        description: 'You chant.',
+        description: ' You chant ',
         result: `
             You get the air around you moving by chanting your favorite tune.
         `,
@@ -147,7 +147,7 @@ const air = {
         power: 50
     }, {
         id: 'yoga',
-        description: 'Stretch it out.',
+        description: ' Stretch it out ',
         result: `
             You decide to get physical in order to get air in your lungs, but you don't get any more
             power.

@@ -35,14 +35,9 @@ ${peaceMessage} and ${theMessage}`;
 //show the user their spell results
 spellResults.textContent = story;
 
-const returnButton = document.createElement('button');
-returnButton.textContent = 'Play again';
+const returnButton = document.querySelector('button');
 
 returnButton.addEventListener('click', () => {
-
+    localStorage.clear();
     window.location = '../index.html';
 });
-
-
-
-

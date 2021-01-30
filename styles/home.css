@@ -22,10 +22,10 @@ main {
 }
 section {
     background-color: rgba(45, 60, 83, 0.7);
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 10px;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,4 +43,13 @@ fieldset {
 }
 p {
     text-align: center;
+}
+button {
+    
+}
+.witchy-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

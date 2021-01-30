@@ -26,10 +26,8 @@ for (let ingredient of ingredientsData) {
     //titles
     a.textContent = ingredient.title;
     a.href = `../ingredients/?id=${ingredient.id}`;
-    //if ingredient has been collected cross it out
-    //if it hasn't been collected then a link to the correct
-    //ingredient
 
     li.append(a);
     ul.append(li);
+
 }

@@ -17,7 +17,6 @@ const ingredientId = params.get('id');
 //use the id to findbyid the ingredient in the ingredientData
 const ingredient = findById(ingredientsData, ingredientId);
 
-
 //use the ingredient to populate the elements of the html
 h1.textContent = ingredient.title;
 p.textContent = ingredient.description;
@@ -36,27 +35,26 @@ for (let choice of ingredient.choices) {
     radio.type = 'radio';
     radio.value = choice.id;
     radio.name = 'choices';
+    // radio.style.display = '';
     label.append(span, radio);
     form.append(label);
 }
-//creates the submit
+//creates the submit button for choices
 const button = document.createElement('button');
 button.textContent = 'Make your choice!';
+button.style.display = '';
 form.appendChild(button);
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault();//prevents negative default browser settings 
     const formData = new FormData(form);
     const selectionId = formData.get('choices');
     const choice = findById(ingredient.choices, selectionId);
     const user = JSON.parse(localStorage.getItem('USER'));
 
-    //Adds the choice points to the user
+    //Adds the choice points to the user (peace and power)
     user.peace += choice.peace;
     user.power += choice.power;
-
-    //Adds stats to local storage
-    localStorage.setItem('USER', JSON.stringify(user));
 
     //Adds results to results span
     resultsSpan.textContent = choice.result;
@@ -70,3 +68,5 @@ form.addEventListener('submit', (e) => {
 backToElement.addEventListener('click', () => {
     window.location = '../elements/index.html';
 });
+
+// make the map relative and the words absolute
